@@ -1,0 +1,304 @@
+#main {
+    .account-page-container {
+
+        // .membership-content {
+        //     display: none;
+        // }
+    
+        .global-page-column {
+            padding: 0;
+        }
+    
+        .account-container {
+            
+            .account-row {
+
+                .link-wrappers {
+                    .link-wrapper {
+                        height: 160px;
+                        border-bottom: 1px solid $brand-grey-3;
+                        text-align: center;
+
+                        @include media-breakpoint-down(sm) {
+                            height: 140px;
+                        }
+                        @include media-breakpoint-down(sm) {
+                            height: 100px;
+                        }
+                    }
+
+                    .link-title {
+                        text-align: center;
+                        margin: 0;
+                        line-height: 160px;
+                        color: $brand-grey-3;
+
+                        @include media-breakpoint-down(sm) {
+                            line-height: 140px;
+                        }
+
+                        @include media-breakpoint-down(sm) {
+                            line-height: 100px;
+                        }
+                    }
+
+    
+
+                    .link-title.active {
+                        color: black;
+                        pointer-events: none;
+                    }
+
+
+                }
+
+                .form-wrapper {
+                    max-width: 750px;
+                    width: 100%;
+                    margin: 60px auto 0;
+
+                    h3, #outdoor_div {
+                        display: none;
+                    }
+
+                    #pmpro_account {
+                        .pmpro_box {
+                            border-top: 0;
+                        }
+                    }
+
+                    .membership-content {
+
+                        .account-membership-container {
+                            margin-bottom: 125px;
+
+                            @include media-breakpoint-down(sm) {
+                                margin-bottom: 75px;
+                            }
+
+                            @include media-breakpoint-down(xs) {
+                                margin-bottom: 50px;
+                            }
+                            
+                            h2 {
+                                margin-bottom: 50px;
+    
+                                @include media-breakpoint-down(sm) {
+                                    margin-bottom: 30px;
+                                }
+                            }
+
+                            .account-membership-button-row {
+                                justify-content: center;
+
+                                .account-membership-button-column {
+                                    margin-top: 15px;
+                                }
+                            }
+
+                            .account-membership-button-link {
+                                .account-membership-button {
+                                    padding: 5px 15px;
+                                    font-size: 16px;
+                                    text-align: center;
+                                    border: 3px solid $dark-green;
+                                    color: $dark-green;
+                                    font-weight: 600;
+                                }
+
+                                #account-membership-button-4 {
+                                    background-color: $dark-green;
+                                    color: white;
+                                }
+                            }
+
+                            .account-membership-button-link:hover {
+                                text-decoration: none;
+                            }
+
+                            #pmpro_account-membership {
+    
+                                margin: 70px 0 0;
+    
+                                @include media-breakpoint-down(sm) {
+                                    margin: 50px 0 0;
+                                }
+    
+                                @include media-breakpoint-down(xs) {
+                                    margin: 30px 0 0;
+                                }
+    
+                                thead {
+                                    display: none;
+                                }
+    
+                                tr {
+                                    display: flex;
+                                    flex-wrap: wrap;
+    
+                                    .pmpro_account-membership-levelname {
+                                        width: 75%;
+                                    }
+    
+                                    .pmpro_account-membership-levelfee {
+                                        width: 25%;
+                                        text-align: right;
+    
+                                        strong {
+                                            color: $brand-grey-3;
+                                        }
+                                    }
+    
+                                    .pmpro_account-membership-expiration {
+                                        width: 100%;
+                                    }
+                                }
+    
+    
+                                .pmpro_actionlinks {
+                                    color: white;
+    
+                                    a {
+                                        color: black;
+                                        padding: 15px 0;
+                                        border: 1px solid $brand-grey-3;
+                                    }
+    
+    
+                                    #pmpro_actionlink-update-billing, #pmpro_actionlink-invoices, 
+                                    #pmpro_actionlink-levels, #pmpro_actionlink-change {
+                                        display: none;
+                                    }
+    
+                                    #pmpro_actionlink-change, #pmpro_actionlink-cancel {
+                                        width: 100%;
+                                        text-align: center;
+                                    }
+    
+                                }
+                            }
+    
+                            #pmpro_account-invoices {
+    
+                                margin: 70px 0;
+    
+                                @include media-breakpoint-down(sm) {
+                                    margin: 50px 0;
+                                }
+    
+                                @include media-breakpoint-down(xs) {
+                                    margin: 30px 0;
+                                }
+    
+                                .pmpro_table {
+                                    thead {
+                                        display: none;
+                                    }
+    
+                                    tr {
+                                        display: flex;
+                                        flex-wrap: wrap;
+                                        padding: 15px;
+                                        margin-bottom: 40px;
+                                        border: 1px solid $brand-grey-3;
+    
+                                        @include media-breakpoint-down(sm) {
+                                            margin-bottom: 20px;
+                                        }
+    
+                                        a {
+                                            cursor: default;
+                                            color: black;
+                                            pointer-events: none;
+                                            text-decoration: none;
+                                        }
+    
+                                        td:nth-child(1) {
+                                            order: 4;
+                                            width: 100%;
+                                        }
+        
+                                        td:nth-child(2) {
+                                            order: 1;
+                                            width: 100%;
+                                        }
+    
+                                        td:nth-child(3) {
+                                            order: 3;
+                                            width: 50%;
+                                            text-align: right;
+                                        }
+    
+                                        td:nth-child(4) {
+                                            order: 2;
+                                            width: 50%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+
+
+                    }
+
+                    .pmpro_member_profile_edit-field, .pmpro_checkout-field{
+                        margin-bottom: 30px;
+
+                        @include media-breakpoint-down(sm) {
+                            margin-bottom: 15px;
+                        }
+                    }
+
+                    .pmpro_btn-submit {
+                        max-width: 540px;
+                        margin: 10px auto;
+                    }
+
+                    .pmpro_btn-cancel {
+                        display: none;
+                    }
+
+                    input, select, textarea {
+                        max-width: 100%;
+                        width: 100%;
+                    }
+
+                    .pmpro_member_profile_edit-fields {
+                        &>a {
+                            display: none;
+                        }
+                    }
+
+                    .pmprorh_checkbox_span {
+                        display: flex;
+                        flex-direction: row;
+                        align-items: center;
+                    }
+
+                    .pmpro_checkout-field-radio-item {
+                        display: flex;
+                        margin-bottom: 15px;
+
+                        input {
+                            width: 60px;
+                            min-width: 60px;
+                            height: 40px;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                        }
+                    }
+
+                    .indoor, .outdoor, .play-competitively, .fitness-access, .golf-facility-access {
+                        width: 30px;
+                        margin-right: 15px;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+

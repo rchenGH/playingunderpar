@@ -1,0 +1,62 @@
+.global-page-container {
+    background-color: $brand-grey-2;
+
+    .title-row {
+        background-color: black;
+        height: 315px;
+        width: 100%;
+        margin: auto;
+
+
+        .title-column {
+            max-width: 1140px;
+            margin: auto;
+    
+            .section-title {
+                color: white;
+            }
+        }
+    }
+
+    .title-row-white {
+        padding: 35px 0;
+        background-color: white;
+        width: 100%;
+        margin: auto;
+        
+        .title-wrapper {
+            padding: 0;
+            max-width: 80%;
+            margin: auto;
+        }
+
+    }
+
+    .global-page-row {
+        max-width: 1140px;
+        margin: auto;
+        padding: 0 0 100px;
+
+        @include media-breakpoint-down(sm) {
+            max-width: calc(100% - 30px);
+            padding: 0 0 75px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding: 0 0 75px;
+        }
+
+        .global-page-column {
+            background-color: white;
+            margin: -100px auto 0;
+            padding: 0 0 70px;
+            width: calc(100% - 40px);
+
+            @include media-breakpoint-down(sm) {
+                width: 100%;
+                padding: 0 0 45px;
+            }
+        }
+    }
+}
+

@@ -1,0 +1,39 @@
+#pmpro_levels_table {
+    max-width: 1140px;
+    margin: 70px auto;
+
+    @include media-breakpoint-down(sm) {
+        margin: 50px auto;
+    }
+
+    @include media-breakpoint-down(xs) {
+        margin: 35px auto;
+    }
+
+    tr {
+        padding: 15px;
+        border: 1px solid $brand-grey-3;
+        td, th {
+            padding: 15px;
+
+            @include media-breakpoint-down(xs) {
+                padding: 15px 5px;
+            }
+        }
+    }
+
+    .pmpro_btn {
+        background-color: transparent;
+        border-radius: 0;
+
+        @include media-breakpoint-down(xs) {
+            padding: 5px;
+        }
+    }
+}
+
+.pmpro-levels {
+    .pmpro_actions_nav {
+        display: none;
+    }
+}

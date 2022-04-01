@@ -1,0 +1,96 @@
+.team-page-container {
+    .global-page-row {
+
+        @include media-breakpoint-down(sm) {
+            max-width: 100%;
+        }
+    }
+}
+
+.team-container {
+
+    margin: 70px 0 0;
+
+    @include media-breakpoint-down(sm) {
+        margin: 50px 0 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+        margin: 35px 0 0;
+    }
+
+    .team-member-row {
+        margin-bottom: 80px;
+        padding: 0 80px;
+
+        @include media-breakpoint-down(lg) {
+            padding: 0 60px;
+        }
+
+        @include media-breakpoint-down(md) {
+            padding: 0 40px;
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 0 25px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding: 0;
+            margin-bottom: 20px;
+        }
+
+        .image-wrapper {
+            padding: 0;
+        }
+
+        .team-member-description-wrapper {
+            @include media-breakpoint-down(xs) {
+                text-align: center;
+            }
+        }
+
+        .team-member-image {
+            width: 100%;
+            max-height: 450px;
+            object-fit: cover;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 15px;
+            }
+        }
+
+        .team-member-name, .team-member-job {
+            margin-bottom: 25px;
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 15px;
+            }
+
+        }
+
+        .team-member-description {
+            margin-bottom: 30px;
+
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 10px;
+            }
+        }
+
+        .icon-wrapper {
+            width: 30px;
+            display: inline-block;
+        }
+
+        .team-member-link {
+            color: black;
+        }
+    }
+
+    .team-member-row:nth-child(2) {
+        flex-direction: row-reverse;
+
+
+    }
+
+}

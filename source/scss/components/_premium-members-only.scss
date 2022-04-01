@@ -1,0 +1,23 @@
+.premium-members-only-container {
+
+    padding: 100px 0;
+
+    @include media-breakpoint-down(sm) {
+        padding: 70px 0;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 50px 0;
+    }
+
+    .premium-members-only-row {
+        max-width: 540px;
+        margin: auto;
+        text-align: center;
+
+        button {
+            width: 100%;
+            max-width: 350px;
+        }
+    }
+}

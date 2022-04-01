@@ -1,0 +1,17 @@
+.archive-categories-container {
+    background-color: $brand-grey-2;
+    .archive-categories-row {
+        max-width: 1140px;
+        margin: auto;
+        padding: 90px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 70px 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding: 45px 0;
+        }
+
+    }
+}

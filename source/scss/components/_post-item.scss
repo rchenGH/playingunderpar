@@ -1,0 +1,167 @@
+.post-item {
+
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+
+    a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.post-item.not-available-yet {
+    min-height: 270px;
+    background-color: $brand-grey-3;
+    padding: 15px;
+    cursor: initial;
+}
+
+.post-item-img {
+    height: 180px;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+
+    @include media-breakpoint-down(sm) {
+        height: 200px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        height: 160px;
+    }
+
+    img {
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.post-item-body {
+    background-color: black;
+    position: relative;
+    flex: 1;
+    align-items: center;
+
+    .category-wrapper {
+        background-color: #fff;
+        width: fit-content;
+        min-width: 180px;
+        min-height: 35px;
+        text-align: center;
+        display: flex;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: -20px auto auto;
+        top: 0;
+        font-weight: 700;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        padding: 7px 0 0;
+
+        .category-text {
+            width: auto;
+            margin: auto;
+            padding: 0 10px;
+        }
+    }
+
+    .post-title-wrapper {
+        min-height: 90px;
+        display: flex;
+        align-items: center;
+        height: 100%;
+
+        .post-title {
+            color: white;
+            margin: 0;
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+.post-component-column {
+
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        margin-bottom: 30px;
+    }
+
+
+}
+
+.post-modal {
+    position: fixed;
+    color: white;
+    display: none;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    padding: 45px;
+
+    .close-modal {
+        position: fixed;
+        z-index: 20;
+        font-size: 50px;
+        margin-top: 10px;
+        padding: 10px;
+        cursor: pointer;
+        line-height: 0.7;
+        color: $brand-grey-3;
+        animation: pulse 2s infinite;
+        border-radius: 50px;
+    }
+
+    @keyframes pulse {
+        0% {
+            box-shadow: 0 0 0 0 transparentize($color: $brand-grey-3, $amount: 0.5);
+        }
+    
+        70% {
+            box-shadow: 0 0 0 10px transparentize($color: $brand-grey-3, $amount: 1);
+        }
+    
+        100% {
+            box-shadow: 0 0 0 0 transparentize($color: $brand-grey-3, $amount: 1);
+        }
+    }
+
+    .modal-content {
+        background-color: white;
+        max-width: 700px;
+        margin: auto;
+        height: 100%;
+        overflow-y: scroll;
+        z-index: 20;
+    }
+
+    .modal-overlay {
+        background-color: transparentize($color:$brand-grey-3, $amount: 0.5);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+
+
+}

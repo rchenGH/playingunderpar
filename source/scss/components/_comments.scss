@@ -1,0 +1,92 @@
+.comment-column {
+    width: 100%;
+    max-width: 900px;
+    margin: auto;
+    padding: 0;
+
+    .comment-respond {
+        max-width: 80%;
+        width: 80%;
+        margin: auto;
+    }
+
+    ul {
+        padding: 0;
+    }
+
+    label[for='comment'] {
+        display: none;
+    }
+
+    .comment-reply-title {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+        }
+    }
+
+    .comment-form .logged-in-as, .comment-edit-link {
+        font-size: 16px;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: $brand-grey-3;
+
+        a {
+            color: $brand-grey-3;
+        }
+    }
+
+    .comment-respond {
+        margin-bottom: 50px;
+    }
+
+    #comment {
+        width: 100%;
+    }
+    .comment {
+        list-style: none;
+        border-top: 1px solid $brand-grey-3;
+        padding: 40px 0 30px;
+
+        .comment-body {
+            width: 80%;
+            margin: auto;
+        }
+    }
+
+    .form-submit {
+        text-align: center;
+
+        .submit {
+            text-transform: uppercase;
+            font-size: 24px;
+            padding: 15px;
+            border-radius: 50px;
+            margin: auto;
+            font-weight: 700;
+            background-color: black;
+            border: 5px solid black;
+            color: white;
+            width: 100%;
+            max-width: 500px;
+        }
+    }
+
+    .comment-author.vcard {
+        display: none;
+    }
+
+    .comment-meta  {
+        margin-bottom: 20px;
+        a:nth-child(1) {
+            pointer-events: none;
+            cursor: default;
+            text-decoration: none;
+            color: black;
+        }
+
+    }
+}

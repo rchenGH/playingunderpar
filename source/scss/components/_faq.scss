@@ -1,0 +1,60 @@
+.faq-container {
+    
+    padding: 125px 15px;
+    background-color: $brand-grey;
+
+    @include media-breakpoint-down(sm) {
+        padding: 115px 15px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        padding: 55px 15px;
+    }
+
+    .faq-title-row {
+        width: 100%;
+        margin: auto;
+
+        .faq-title-column {
+            text-align: center;
+            margin-bottom: 23px;
+        }
+    }
+
+    .faq-row {
+        max-width: 1140px;
+        margin: auto auto 38px;
+        
+
+        @include media-breakpoint-down(xs) {
+            margin: auto auto 23px;
+        }
+
+        .faq-column {
+            background-color: white;
+            
+
+            .section-title {
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+            }
+
+            .question {
+                padding: 30px 15px;
+            }
+
+            .dropdown-arrow {
+                max-height: 34px;
+            }
+
+            .dropdown-arrow::before {
+                content: "\25BC"; 
+            }
+
+            .content-wrapper {
+                padding: 0 15px;
+            }
+        }
+    }
+}

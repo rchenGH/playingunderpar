@@ -1,0 +1,117 @@
+.single-container {
+
+    padding: 80px 0;
+    background-color: transparentize($color: $brand-grey-3, $amount: 0.5);
+
+    @include media-breakpoint-down(sm) {
+        padding: 40px 0;
+    }
+
+    .single-row {
+        max-width: 640px;
+        margin: auto;
+
+        .featured-wrapper {
+            padding: 0;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            iframe {
+                width: 100%;
+            }
+
+        }
+
+    }
+
+    .title-row-white {
+        width: 100%;
+        max-width: 640px;
+        margin: auto;
+        background-color: white;
+        padding: 50px 0;
+
+        @include media-breakpoint-down(sm) {
+            padding: 30px 0;
+        }
+    }
+
+    .single-title-row {
+        width: 100%;
+        background-color: white;
+        max-width: 640px;
+        margin: auto;
+
+        .title-wrapper {
+            margin: auto;
+            padding: 30px 0;
+            max-width: 80%;
+
+            .categories-wrapper {
+                margin: 0 0 30px;
+            }
+
+            .blog-post-text {
+                font-weight: 500;
+                margin: 30px 0;
+            }
+        }
+    }
+
+    .content-row {
+        max-width: 640px;
+        margin: auto;
+        background-color: $brand-grey-2;
+
+        .content-column {
+            max-width: 80%;
+            margin: auto;
+            padding: 30px 0;
+
+            .author {
+                margin: 0;
+            }
+
+            .date {
+                margin-bottom: 30px;
+            }
+
+            iframe, image, video{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+
+    .related-posts-row {
+        max-width: 1140px;
+        background-color: $brand-grey-2;
+        margin: auto;
+        padding-bottom: 50px;
+
+        @include media-breakpoint-down(xs) {
+            padding-bottom: 20px;
+        }
+
+        .related-posts-column {
+            padding: 0;
+            max-width: calc((100% / 2) - 15px);
+
+            @include media-breakpoint-down(xs) {
+                max-width: 100%;
+                margin-bottom: 30px;
+            }
+        }
+
+        .related-posts-inner-container {
+            .related-posts-inner-row {
+                justify-content: space-between;
+                max-width: 80%;
+                margin: auto;
+            }
+        }
+    }
+}

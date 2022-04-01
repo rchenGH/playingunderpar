@@ -1,0 +1,95 @@
+
+
+.pmpro_btn:hover {
+    color: $brand-grey-3;
+
+    span {
+        color: $brand-grey-3;
+    }
+}
+
+.form-wrapper {
+    .pmpro_btn {
+        display: flex;
+        text-align: left;
+        background-color: white;
+        border: 1px solid $brand-grey-3;
+        border-radius: 0;
+        align-items: center;
+        margin: 10px 0;
+        font-weight: 700;
+        flex-wrap: wrap;
+        white-space: break-spaces;
+        
+    
+        @include media-breakpoint-down(xs) {
+            font-size: 13px;
+        }
+    
+        .price {
+            margin-left: auto;
+            font-size: 18px;
+            padding-left: 15px;
+        }
+    }
+
+    .pmpro_btn:link {
+        white-space: unset;
+        justify-content: space-between;
+    }
+
+    .pmpro_btn {
+        font-size: 14px;
+        text-transform: uppercase;
+
+    }
+
+    label {
+        font-size: 18px;
+        font-weight: 700;
+        text-transform: uppercase;
+    
+        @include media-breakpoint-down(sm) {
+            font-size: 16px;
+        }
+    }
+
+    input, select {
+        width: 100%;
+        font-weight: 400;
+        font-size: 16px;
+        height: 45px;
+    }
+
+    .pmpro_btn-submit-checkout, .pmpro_btn-submit, input[type="button"]#discount_code_button  {
+        text-transform: uppercase;
+        font-size: 24px;
+        padding: 15px;
+        border-radius: 50px;
+        margin: 15px;
+        font-weight: 700;
+        background-color: black;
+        text-decoration: none;
+        border: 5px solid black;
+        color: white;
+        height: unset;
+        margin: 0;
+        width: 100%;
+        justify-content: center;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 20px;
+        }
+    
+        @include media-breakpoint-down(xs) {
+            font-size: 18px;
+        }
+    
+    }
+
+    input[type="button"]#discount_code_button {
+        margin-top: 15px;
+    }
+    
+}
+

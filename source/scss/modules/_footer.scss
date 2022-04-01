@@ -1,0 +1,173 @@
+#footer {
+    background-color: black;
+
+    a:hover {
+        color: $brand-grey-3;
+    }
+
+    .footer-container {
+
+        .footer-row {
+            padding: 80px;
+
+            @include media-breakpoint-down(sm) {
+                padding: 45px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                padding: 10px 0;
+                text-align: center;
+            }
+
+            .footer-menu-wrapper {
+
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                    order: 3;
+                    margin-bottom: 15px;                
+                }
+
+                #menu-logged-in-footer-menu-mobile {
+                    @include media-breakpoint-down(sm) {
+                        display: flex;
+                        justify-content: space-around;
+                    }
+                }
+
+                .footer-menu {
+                    padding: 0;
+        
+                    .menu-item {
+                        a {
+                            font-size: 24px;
+                            color: white;
+                            text-transform: uppercase;
+        
+                            @include media-breakpoint-down(sm) {
+                                font-size: 18px;
+                            }
+        
+                            @include media-breakpoint-down(xs) {
+                                font-size: 20px;
+                            }
+                        }
+        
+                        a:hover {
+                            text-decoration: none;
+                            color: $brand-grey-3;
+                        }
+                    }
+
+                    .footer-item-icon {
+                        height: 45px;
+                        width: 45px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        justify-content: center;
+                        display: flex;
+        
+                        @include media-breakpoint-down(xs) {
+                            height: 30px;
+                            width: 30px;
+                        }
+        
+                        a {
+                            @include media-breakpoint-down(sm) {
+                                display: flex;
+                                align-items: flex-end;
+                                position: absolute;
+                                padding-top: 60px;
+                                font-size: 14px;
+                            }
+        
+                            @include media-breakpoint-down(xs) {
+                                font-size: 10px;
+                                padding-top: 40px;
+                            }
+                        }
+        
+        
+                        @include media-breakpoint-up(md) {
+                            background-image: unset;
+                        }
+                    }
+        
+                }
+
+                .footer-menu.mobile {
+                    @include media-breakpoint-up(md) {
+                        display: none;
+                    }
+                }
+
+                .footer-menu.desktop {
+                    @include media-breakpoint-down(sm) {
+                        display: none;
+                    }
+                }
+
+                @include media-breakpoint-down(xs) {
+                    text-align: center;
+                }
+            }
+
+            .footer-logo-wrapper {
+                text-align: center;
+                margin-bottom: 15px;
+
+                @include media-breakpoint-down(sm) {
+                    order: 1;
+                }
+
+                .footer-logo {
+                    height: 180px;
+                    width: auto;
+                    margin-top: -60px;
+
+                    @include media-breakpoint-down(md) {
+                        height: 145px;
+                    }
+
+                    @include media-breakpoint-down(sm) {
+                        height: 125px;
+                        margin-top: 15px;
+                    }
+
+                    @include media-breakpoint-down(xs) {
+                        height: 115px;
+                    }
+                }
+
+                .copyright-wrapper {
+                    text-align: center;
+                }
+            }
+
+            .footer-social-media-wrapper {
+                text-align: right;
+                order: 2;
+
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                    margin-bottom: 15px;
+                }
+            }
+
+
+
+        }
+
+    }
+}
+
+.logged-in-footer {
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+
+        .footer-logo-wrapper, .footer-social-media-wrapper {
+            display: none;
+        }
+    }
+}

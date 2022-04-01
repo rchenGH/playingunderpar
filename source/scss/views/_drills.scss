@@ -1,0 +1,28 @@
+.drills-page-container {
+
+    .drills-row {
+        justify-content: center;
+    }
+
+    .post-component-column {
+        .post-item {
+            .post-cat-img {
+                height: 300px;
+
+                img {
+                    object-fit: cover;
+                    object-position: center;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            .post-item-img {
+                height: 210px;
+            }
+        }
+
+
+    }
+
+}

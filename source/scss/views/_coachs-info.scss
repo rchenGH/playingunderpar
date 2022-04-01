@@ -1,0 +1,104 @@
+.coachs-info-top-wrapper {
+
+    .top-image {
+        width: 100%;
+
+    }
+}
+
+.coachs-info-container {
+
+    background-color: $brand-grey-2;
+
+    .coachs-info-row {
+        max-width: 1140px;
+        margin: auto;
+        background-color: white;
+        padding: 120px 0;
+
+        @include media-breakpoint-down(lg) {
+            padding: 100px 0; 
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding: 75px 0;
+        }
+
+        @include media-breakpoint-down(xs) {
+            padding: 50px 0;
+        }
+
+        h1, h2 {
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 120px;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 75px
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 50px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 45px;
+            }
+        }
+
+        h2 {
+            margin-bottom: 45px;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 30px
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 25px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 20px;
+            }
+        }
+
+        .coachs-info-column {
+            margin-bottom: 120px;
+
+            @include media-breakpoint-down(lg) {
+                margin-bottom: 75px
+            }
+
+            @include media-breakpoint-down(sm) {
+                margin-bottom: 50px;
+            }
+
+            @include media-breakpoint-down(xs) {
+                margin-bottom: 45px;
+            }
+
+            .content-wrapper {
+                max-width: 750px;
+                margin: auto;
+            }
+
+            .subtext {
+                color: $dark-green;
+            }
+        }
+
+        .button-wrapper {
+            text-align: center;
+
+            a {
+                margin-bottom: 20px;
+
+                @include media-breakpoint-down(sm) {
+                    margin-bottom: 15px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+.sign-in-container {
+
+    background-color: $brand-grey-2;
+    padding: 40px 0;
+    height: 100%;
+
+    .login-title-wrapper, .password-title-wrapper {
+        margin-top: 40px;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 20px;
+        }
+    }
+
+    .sign-in-row, .not-member-row, .consult-row, .ignore-row {
+        background-color: white;
+        max-width: 1140px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+
+        .ignore-column {
+            max-width: 550px;
+            margin: auto;
+        }
+    }
+
+    .consult-row {
+        text-align: center;
+        justify-content: center;
+
+        .consult-column {
+            max-width: 350px;
+
+            .consult-content {
+                margin: 40px auto;
+            }
+        }
+
+    }
+
+    .not-member-row {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 40px 0;
+        text-align: center;
+
+        @include media-breakpoint-down(sm) {
+            margin-top: 28px;
+            margin-bottom: 28px;
+        }
+
+        .sign-up-link {
+            color: black;
+        }
+    }
+
+
+    h2 {
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 48px;
+        font-weight: 700;
+
+        @include media-breakpoint-down(sm) {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        @include media-breakpoint-down(xs) {
+            font-size: 36px;
+        }
+    }
+
+    .pmpro_login_wrap, .pmpro_lost_password_wrap {
+        max-width: 350px;
+        width: 100%;
+        margin: auto;
+        padding: 45px 0;
+    
+        @include media-breakpoint-down(sm) {
+            padding: 30px;
+        }
+    
+        @include media-breakpoint-down(xs) {
+            padding: 15px;
+        }
+    
+
+        hr {
+            border-top: 0;
+        }
+
+        .pmpro_actions_nav {
+            a {
+                color: black;
+                font-size: 16px;
+            }
+        }
+
+        #loginform label, #lostpasswordform label {
+            font-size: 18px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+    
+        #loginform input, #lostpasswordform input{
+            max-width: 100%;
+            width: 100%;
+        }
+    
+        form#loginform input[type=text].input, form#loginform input[type=password].input,
+        form#lostpasswordform input[type=text].input{
+            height: 45px;
+            border: 1px solid #C4C4C4;
+    
+            @include media-breakpoint-down(md) {
+                width: 100%;
+            }
+        }
+
+    
+        #loginform, #lostpasswordform {
+
+            .login-remember label {
+                display: flex;
+                align-items: center;
+            }
+
+            input[type='checkbox'] {
+                width: 36px;
+                height: 36px;
+                margin-right: 15px;
+            }
+
+
+            input[type='checkbox']:checked::after {
+                position: absolute;
+                width: 36px;
+                height: 36px;
+                content: "";
+                background-color: black;
+                background-image: url('../images/checkmark.jpg');
+                display: flex;
+                justify-content: center;
+                background-size: contain;
+            }
+
+            input[type='submit'] {
+                text-transform: uppercase;
+                font-size: 24px;
+                padding: 15px;
+                border-radius: 50px;
+                border: 5px solid white;
+                font-weight: 700;
+                background-color: black;
+                color: white;
+                margin: 0;
+            }
+        }
+
+    }
+
+    .pmpro_logged_in_welcome_wrap {
+        padding: 40px 0;
+        text-align: center;
+        
+        .pmpro_member_display_name, .pmpro_member_display_name a {
+            font-size: 48px;
+            text-transform: uppercase;
+            color: black;
+
+            @include media-breakpoint-down(sm) {
+                font-size: 42px;
+            }
+        
+            @include media-breakpoint-down(xs) {
+                font-size: calc(24px + (36 - 24) * ((100vw - 325px) / (1900 - 325)));;
+            }
+        }
+
+        .pmpro_member_log_out {
+            a {
+                color: black;
+            }
+        }
+    }
+}
+

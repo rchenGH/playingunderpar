@@ -1,0 +1,230 @@
+@font-face {
+    font-family: "Poppins";
+    src: url("../../assets/fonts/Poppins-ExtraBold.ttf");
+    font-weight: 800;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../assets/fonts/Poppins-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../assets/fonts/Poppins-SemiBold.ttf");
+    font-weight: 600;
+}
+
+@font-face {
+    font-family: "Poppins";
+    src: url("../../assets/fonts/Poppins-Regular.ttf");
+    font-weight: 400;
+}
+
+* {
+    font-family: "Poppins";
+    color: black;
+}
+
+.white {
+    color: white;
+}
+
+.black {
+    color: black;
+}
+
+.hero-title {
+    font-size: 96px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 64px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 50px;
+    }
+}
+
+.section-title.xlarge {
+    font-weight: 700;
+    font-size: 64px;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(md) {
+        font-size: 48px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 36px;
+    }
+}
+
+.section-title {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.section-sub-title {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.section-title.large {
+    font-size: 48px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 42px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: calc(24px + (36 - 24) * ((100vw - 325px) / (1900 - 325)));;
+    }
+}
+
+.section-title.medium-large {
+    font-size: 42px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 38px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 36px;
+    }
+}
+
+.section-title.medium {
+    font-size: 38px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 30px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 28px;
+    }
+}
+
+
+.section-title.medium-small {
+    font-size: 30px;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+    }
+}
+
+.section-title.small {
+    font-size: 28px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 24px;
+    }
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+    }
+}
+
+.section-title.smaller {
+    font-size: 20px;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 16px;
+    }
+}
+
+.small-link {
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+    text-transform: uppercase;
+}
+
+
+.small-subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.bold-label-text {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+    }
+}
+
+.large-body-text {
+    font-size: 22px;
+
+    @include media-breakpoint-down(xs) {
+        font-size: 14px;
+    }
+}
+
+.medium-large-body-text {
+    font-size: 18px;
+
+    @include media-breakpoint-down(sm) {
+        font-size: 16px;
+    }
+
+}
+
+.normal-body-text {
+    font-size: 16px;
+}
+
+.small-body-text {
+    font-size: 14px;
+}
+
+.very-small-body-text {
+    font-size: 12px;
+}
+
+.dark-green {
+    color: $dark-green;
+}
+
+
+.pagination-wrapper {
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .page-numbers {
+        font-weight: 600;
+        font-size: 24px;
+        padding: 0 15px;
+    }
+
+    .current {
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    .next {
+        position: absolute;
+        right: 0;
+    }
+
+    .prev {
+        position: absolute;
+        left: 0;
+    }
+}
